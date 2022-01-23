@@ -2,41 +2,41 @@
 
 __author__ = "730484603"
 
-word1: str = input("Enter a 5-character word: ")
-if len(word1) != 5:
+five_character_word: str = input("Enter a 5-character word: ")
+if len(five_character_word) != 5:
     print("Error: Word must contain 5 characters")
     exit()
-character1: str = input("Enter a single character: ")
-if len(character1) != 1: 
+single_character: str = input("Enter a single character: ")
+if len(single_character) != 1: 
     print("Error: Character must be a single character.")
     exit()
-print("Searching for " + character1 +  " in " + word1)
-if character1 == word1[0]:
-    print(character1 + " found at index 0")
-if character1 == word1[1]:
-    print(character1 + " found at index 1")
-if character1 == word1[2]:
-    print(character1 + " found at index 2")
-if character1 == word1[3]:
-    print(character1 + " found at index 3")
-if character1 == word1[4]:
-    print(character1 + " found at index 4")
-matching: int = 0
-if character1 == word1[0]:
-    matching = matching + 1
-if character1 == word1[1]:
-    matching = matching + 1
-if character1 == word1[2]:
-    matching = matching + 1
-if character1 == word1[3]:
-    matching = matching + 1
-if character1 == word1[4]:
-    matching = matching + 1
-if matching == 0 :
-    print("No instances of " + character1 + " found in " + word1)
+print("Searching for " + single_character + " in " + five_character_word)
+if single_character == five_character_word[0]:
+    print(single_character + " found at index 0")
+if single_character == five_character_word[1]:
+    print(single_character + " found at index 1")
+if single_character == five_character_word[2]:
+    print(single_character + " found at index 2")
+if single_character == five_character_word[3]:
+    print(single_character + " found at index 3")
+if single_character == five_character_word[4]:
+    print(single_character + " found at index 4")
+counting_matching_character: int = 0
+if single_character == five_character_word[0]:
+    counting_matching_character = counting_matching_character + 1
+if single_character == five_character_word[1]:
+    counting_matching_character = counting_matching_character + 1
+if single_character == five_character_word[2]:
+    counting_matching_character = counting_matching_character + 1
+if single_character == five_character_word[3]:
+    counting_matching_character = counting_matching_character + 1
+if single_character == five_character_word[4]:
+    counting_matching_character = counting_matching_character + 1
+if counting_matching_character == 0:
+    print("No instances of " + single_character + " found in " + five_character_word)
 else:
-    if matching == 1:
-        print(str(matching) + " instance of " + character1 + " found in " + word1)
+    if counting_matching_character == 1:
+        print(str(counting_matching_character) + " instance of " + single_character + " found in " + five_character_word)
     else:
-        if matching > 1:
-            print(str(matching) + " instances of " + character1 + " found in " + word1)
+        if counting_matching_character > 1:
+            print(str(counting_matching_character) + " instances of " + single_character + " found in " + five_character_word)
