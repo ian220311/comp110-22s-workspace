@@ -4,6 +4,7 @@ __author__ = "730484603"
 
 from turtle import Turtle, colormode, done, tracer, update
 
+
 def sailboat_sail(a_sail: Turtle, x: float, y: float, width: float, length: float) -> None:
     """Draws the sails of a sail boat."""
     ertle: Turtle = Turtle()
@@ -27,9 +28,8 @@ def sailboat_sail(a_sail: Turtle, x: float, y: float, width: float, length: floa
     a_sail.hideturtle()
 
 
-def inner_sail_design_one(triangle: Turtle,  x: float, y: float, sidelength: float) -> None:
+def inner_sail_design_one(triangle: Turtle, x: float, y: float, sidelength: float) -> None:
     """Inner design one of the sails on the sail boat."""
-    ertle: Turtle = Turtle()
     i: int = 0
     colormode(255)
     triangle.penup()
@@ -39,10 +39,10 @@ def inner_sail_design_one(triangle: Turtle,  x: float, y: float, sidelength: flo
     triangle.color(155, 27, 19)
     triangle.begin_fill()
     while i < 3:
-       triangle.forward(sidelength)
-       triangle.left(120)
-       sidelength *= .96
-       i += 1
+        triangle.forward(sidelength)
+        triangle.left(120)
+        sidelength *= .96
+        i += 1
     triangle.hideturtle()
 
 
@@ -67,7 +67,6 @@ def inner_sail_design_two(triangle: Turtle, x: float, y: float, sidelength: floa
 
 def sailboat_base(a_base: Turtle, x: float, y: float, width: float, length: float) -> None:
     """Draws the base of the sail boat."""
-    ertle: Turtle = Turtle()
     colormode(255)
     a_base.penup()
     a_base.goto(x, y)
@@ -89,7 +88,6 @@ def sailboat_base(a_base: Turtle, x: float, y: float, width: float, length: floa
 
 def sailboat_mast(a_mast: Turtle, x: float, y: float, width: float, length: float) -> None:
     """Draws the mast of the sail boat."""
-    ertle: Turtle = Turtle()
     colormode(255)
     a_mast.penup()
     a_mast.goto(x, y)
@@ -110,7 +108,6 @@ def sailboat_mast(a_mast: Turtle, x: float, y: float, width: float, length: floa
 
 def sun(a_sun: Turtle, x: float, y: float, radius: float, extent: float) -> None:
     """Draws the sun overlooking the open ocean."""
-    rtle: Turtle = Turtle()
     colormode(255)
     a_sun.penup()
     a_sun.goto(x, y)
@@ -125,7 +122,6 @@ def sun(a_sun: Turtle, x: float, y: float, radius: float, extent: float) -> None
 
 def birds(a_birds: Turtle, x: float, y: float, length_one: float, length_two: float) -> None:
     """Draws the birds flying above the open ocean."""
-    ertle: Turtle = Turtle()
     colormode(255)
     a_birds.penup()
     a_birds.goto(x, y)
@@ -157,7 +153,6 @@ def background(a_background: Turtle) -> None:
 
 def waves(a_waves: Turtle, x: float, y: float, length: float) -> None:
     """Draws waves in the open ocean."""
-    ertle: Turtle = Turtle()
     colormode(255)
     a_waves.penup()
     a_waves.goto(x, y)
@@ -216,7 +211,7 @@ def bird_lines() -> None:
 
 def main() -> None:
     """The entrypoint of my scene."""
-    tracer(0, 0) # Disable delay in tracing
+    tracer(0, 0)
     ertle: Turtle = Turtle()
     background(ertle)
     i: int = 0
@@ -235,7 +230,7 @@ def main() -> None:
     sailboat_sail(ertle, -300, -85, 160, 100)
     sailboat_sail(ertle, -5, 145, 145, 90)
     bird_lines()
-    update() # Now update the rednering
+    update()
     done()
 
 
