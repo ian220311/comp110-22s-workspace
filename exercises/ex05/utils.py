@@ -1,4 +1,4 @@
-"""Exercise 3 - Utils: List Utility functions."""
+"""Exercise 3 - List Utility functions."""
 
 __author__ = "730484603"
 

@@ -67,7 +67,7 @@ def test_sub_iregular_parameters() -> None:
     xs: list[int] = [1, 2, 3, 5, 6]
     negative_start_index: int = -13
     greater_end_index: int = 22
-    assert sub(xs, -13, 22) == [1, 2, 3, 5, 6]
+    assert sub(xs, negative_start_index, greater_end_index) == [1, 2, 3, 5, 6]
 
 
 def test_sub_regular_paramaters() -> None:
