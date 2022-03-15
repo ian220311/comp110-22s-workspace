@@ -15,6 +15,15 @@ def only_evens(user_list: list[int]) -> list[int]:
     return evens
 
 
+    # for character in user_list:
+    #   if character % 2 == 0:
+    #       evens.append(character)
+    # returns evens
+
+
+
+
+
 def sub(given_list: list[int], start_index: int, end_index: int) -> list[int]:
     """Returns a subset of the given list, between the stat index and the end index."""
     subset_list: list[int] = list()
